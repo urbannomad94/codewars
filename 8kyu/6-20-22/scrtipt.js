@@ -7,11 +7,8 @@
 // Good Luck!
 
 function doubleChar(str) {
-  let arr = str.split("");
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    result.push(arr[i]);
-    result.push(arr[i]);
-  }
-  return result.join("");
+  return str
+    .split("")
+    .map((x) => x + x)
+    .join("");
 }
