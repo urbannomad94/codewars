@@ -7,12 +7,5 @@
 // "Why isn't my code working?"  -->  "W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"
 
 function vaporcode(string) {
-  let arr = string.split(" ").join("").split("");
-  let vap = [];
-  for (let i = 0; i < arr.length - 1; i++) {
-    vap.push(arr[i].toUpperCase());
-    vap.push("  ");
-  }
-  vap.push(arr[arr.length - 1].toUpperCase());
-  return vap.join("");
+  return string.toUpperCase().split(" ").join("").split("").join("  ");
 }
