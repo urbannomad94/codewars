@@ -8,11 +8,5 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
-function addLength(str) {
-  let arr = str.split(" ");
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = `${arr[i]} ${arr[i].length}`;
-  }
-  //   arr.forEach(word => word = `${word} ${word.length}`)
-  return arr;
-}
+const addLength = (str) =>
+  str.split(" ").map((word) => `${word} ${word.length}`);
